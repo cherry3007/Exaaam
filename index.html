@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <img src="img/Group 3.png" alt="Логотип">
+        <h1>MARGIELA<br>SERVICE</h1>
+    </div>
+    <div id="content">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <img src="img/Group 3 (1).png" alt="">
+                    <ul>
+                        <li>Главная</li>
+                        <li>Акция</li>
+                        <li>Оформление заказа</li>
+                        <li>Калькулятор стоимости</li>
+                        <li>Товары в Москве</li>
+                        <li>Таблица размеров</li>
+                    </ul>
+                    <button id="orderButton" class="tg-button">
+                        Сделать заказ <i class="fa-brands fa-telegram"></i>
+                    </button>
+                    <button id="dark-mode-btn">🌙 Темный режим</button>
+
+                </nav>
+                <div class="header-content">
+                    <img src="img/Frame 5.png" alt="">
+                    <div class="header-content_text">
+                        <h1>Margiela Service - правильный выбор!</h1>
+                        <p>После ухода любимых брендов не можете найти себе обувь? Мы решим вашу проблему с быстрой доставкой в любую точку страны по выгодной цене</p>
+                    </div>
+                    <button id="voice-btn">🔊 Озвучить текст</button>
+                    <div class="header-content_img">
+                        <img src="img/photo_2025-03-19_07-47-07.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="calculator">
+                        <h2>Рассчитай стоимость заказа прямо на сайте</h2>
+                        <input type="number" placeholder="Цена на товар в юанях" id="price">
+                        <button onclick="changeCategory()" id="category-btn">Одежда</button> 
+                        <button onclick="calculatePrice()" id="btn">Рассчитать</button>
+                        <p class="price-info">Итоговая стоимость: <span id="total">0</span>₽</p>
+                        <p class="dostavka">С учётом доставки</p>
+                    </div>                
+                    <div class="order">
+                        <h2>Подходит цена?
+                            - скорее заказывай!</h2>
+                            <p>Выбирайте товары в POZION или покупайте прямо с нашего склада в Москве</p>
+                        <div class="qr-code">
+                            <img id="qr-img" src="img/gr-code.jpg" alt="QR Code">
+                        </div>
+                        <input type="text" placeholder="Введите текст для QR-кода" id="qr-text" style="display: none;">
+                        <img src="img/krossovki.png" alt="" class="imgggg">
+                        <div class="sozdaie">
+                            <a href="https://www.qr-code-generator.com/" target="_blank">
+                                <button id="create-qr-btn">Создать свой QR-код</button>
+                            </a>
+                            </div>
+                    </div>
+                </div>
+            </div>            
+    </section>
+    <section class="section2">
+        <div class="container">
+            <h1>Товары в наличии на складе <strong>в Москве</strong></h1>
+            <div class="section2-cards">
+                <div class="section2-card">
+                    <img src="img/card.png" alt="">
+                    <h2>Nike P-6000</h2>
+                    <p>Flat Pewter Light Iron Ore</p>
+                    <h3>14.000₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card2.png" alt="">
+                    <h2> New Balance 1906D</h2>
+                    <p>Protection Pack - Black</p>
+                    <h3>12.000₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card3.png" alt="">
+                    <h2>Adidas Samba OG</h2>
+                    <p>Halo Blue</p>
+                    <h3>12.000₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card4.png" alt="">
+                    <h2>New Balance 1906R</h2>
+                    <p>Taos Taupe</p>
+                    <h3>12.000₽</h3>
+                    <button  class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card5.png" alt="">
+                    <h2>Nike Air Humara 
+                        LX WMNS</h2>
+                    <p>Jacquemus - Pink Flash</p>
+                    <h3>17.000₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card6.png" alt="">
+                    <h2>Notitle x Adidas Samba</h2>
+                    <p>Cow Print</p>
+                    <h3>16.500₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card7.png" alt="">
+                    <h2>Nike SB Dunk Low
+                        x Yuto Horigome</h2>
+                    <p></p>
+                    <h3>16.000₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+                <div class="section2-card">
+                    <img src="img/card8.png" alt="">
+                    <h2>Nike Dunk SB Low Pro
+                        x Tightbooth</h2>
+                    <p>Black and White</p>
+                    <h3>14.000₽</h3>
+                    <button class="orderbtn">Оформить заказ!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <h2>Ответы на частозадаваемые вопросы</h2>
+            <div class="section3-cards">
+                <div class="section3-card">
+                    <h2>Что такое Poizon?</h2>
+                    <p>Poizon - китайский маркетплейс с гигантским ассортиментом брендовых кроссовок и одежды, в том числе лимитированных выпусков и коллабораций: 95% товаров невозможно найти в России.
+                        <br>
+                        Помимо гигантского ассортимента Poizon предлагает цены на оригинальную продукцию в 2-3 раза ниже, чем в России, поэтому он так интересен Россиянам.
+                        <br>
+                        Ключевая проблема - Poizon работает только на территории Китая, поэтому функцию доставки в Россию осуществляем мы, как посредник, за небольшую комиссию. <br></p>
+                        <img src="img/plus.png" alt="">
+                </div>
+                <div class="section3-card_1">
+                    <h2>Можно ли заказать товар, которого нет
+                        у вас в ассортименте?</h2>
+                    <p>Да, конечно. Если вы не нашли нужного товара в нашем ассортименте – мы можем предложить оформить заказ со склада в Китаее. Из Китая в Москву товар идет от 5 до 15 дней. С учетом времени на выкуп и доставку до нужного города, товары обычно приходят нашим клиентам за 2 недели.
+                    </p>
+                        <img src="img/plus.png" alt="">
+                </div>
+                <div class="section3-card_2">
+                    <h2>Сколько по времени занимает доставка
+                        с нашего склада?</h2>
+                    <p>Все товары находятся на нашем складе в Москве и доставка в среднем занимает 1-5 дней. Мы отправляем заказы многими службами доставки, чтобы каждому клиенту было как можно удобнее получить свой заказ.
+                    </p>
+                        <img src="img/plus.png" alt="">
+                </div>
+                <div class="section3-card_3">
+                    <h2>Вы предоставляете оригинальные товары?</h2>
+                    <p>У нас вы найдете только оригинальную продукцию. Наши крепкие связи с поставщиками из Европы и Китая, проверены временем и ни одной сотней поставок.</p>
+                        <img src="img/plus.png" alt="">
+                </div>
+                <div class="section3-card_4">
+                    <h2>Какие у вас гарантии?</h2>
+                    <p>За 2 года нашей работы в нашем телеграм канале уже более 10.000 подписчиков и их число постоянно растет. У нас есть отдельный канал по отзывам клиентов и оформленных товаров. Мы работаем честно и прозрачно, не скрывая свои данные и заказы. Все посылки страхуются и в случае потери мы поможем вам получить ваш товар.
+                    </p>
+                        <img src="img/plus.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container">         
+            <img src="img/tablisa.png" alt="">
+            <h4>Как правильно подобрать размер обуви?</h4>
+            <div class="tablisi anim-block">
+                <img src="img/Group 17.png" alt="">
+                <p>Поставь ногу на лист бумаги так, чтоб пятка касалась стены</p>
+            </div>
+            <img src="img/stick.png" alt="" class="stick anim-line">
+            <div class="tablisi2 anim-block">
+                <img src="img/Group 16.png" alt="">
+                <p>Обведи ногу карандашом, не отрывая стопу от бумаги</p>    
+            </div>
+            <img src="img/stick.png" alt="" class="stick1 anim-line">
+            <div class="tablisi3 anim-block">
+                <img src="img/Group 15 (1).png" alt="">
+                <p>Измерь расстояние от кончика большого пальца до конца пятки</p>    
+            </div>
+            <img src="img/stick.png" alt="" class="stick2 anim-line">
+            <div class="tablisi4 anim-block">
+                <img src="img/Group 14 (1).png" alt="">
+                <p>Повтори эти же действия со второй стопой</p>    
+            </div>
+            <img src="img/stick.png" alt="" class="stick3 anim-line">
+            <p class="p">Узнав больший размер своей стопы в СМ, обратись к нашей таблице и найди свой размер</p>
+            <img src="img/krossovook.png" alt="" class="krossovok">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="nav2">
+                <div class="logo">
+                    <img src="img/Group 3 (1).png" alt="Logo">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Акция</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
+                        <li><a href="#">Калькулятор стоимости</a></li>
+                        <li><a href="#">Товары в Москве</a></li>
+                        <li><a href="#">Таблица размеров</a></li>
+                    </ul>
+                </nav>
+                <button id="placeOrderButton" class="tgbutton">
+                    Сделать заказ <i class="fa-brands fa-telegram"></i>
+                </button>
+            </div>
+            <hr>
+            <p class="credits">Designed with love by Mirka design agency</p>
+            <p class="credits">Все права защищены ©2025</p>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
